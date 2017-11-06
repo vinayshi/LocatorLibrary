@@ -10,6 +10,12 @@
 		2BDDD9771FB0C786001E2513 /* LocatorLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BDDD96D1FB0C786001E2513 /* LocatorLibrary.framework */; };
 		2BDDD97C1FB0C786001E2513 /* LocatorLibraryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDDD97B1FB0C786001E2513 /* LocatorLibraryTests.swift */; };
 		2BDDD97E1FB0C786001E2513 /* LocatorLibrary.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BDDD9701FB0C786001E2513 /* LocatorLibrary.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2BDDD98C1FB0C7DF001E2513 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDDD9881FB0C7DE001E2513 /* LocationManager.swift */; };
+		2BDDD98D1FB0C7DF001E2513 /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDDD98A1FB0C7DF001E2513 /* BaseService.swift */; };
+		2BDDD98E1FB0C7DF001E2513 /* ServiceIdentifierEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDDD98B1FB0C7DF001E2513 /* ServiceIdentifierEnum.swift */; };
+		2BDDD9941FB0C7EA001E2513 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDDD9901FB0C7EA001E2513 /* ColorExtension.swift */; };
+		2BDDD9951FB0C7EA001E2513 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDDD9911FB0C7EA001E2513 /* Utilities.swift */; };
+		2BDDD9961FB0C7EA001E2513 /* CustomPlacemarkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDDD9931FB0C7EA001E2513 /* CustomPlacemarkModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +35,12 @@
 		2BDDD9761FB0C786001E2513 /* LocatorLibraryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocatorLibraryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BDDD97B1FB0C786001E2513 /* LocatorLibraryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocatorLibraryTests.swift; sourceTree = "<group>"; };
 		2BDDD97D1FB0C786001E2513 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2BDDD9881FB0C7DE001E2513 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		2BDDD98A1FB0C7DF001E2513 /* BaseService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
+		2BDDD98B1FB0C7DF001E2513 /* ServiceIdentifierEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceIdentifierEnum.swift; sourceTree = "<group>"; };
+		2BDDD9901FB0C7EA001E2513 /* ColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		2BDDD9911FB0C7EA001E2513 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		2BDDD9931FB0C7EA001E2513 /* CustomPlacemarkModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPlacemarkModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +83,10 @@
 		2BDDD96F1FB0C786001E2513 /* LocatorLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				2BDDD98F1FB0C7EA001E2513 /* Utilities */,
+				2BDDD9921FB0C7EA001E2513 /* Views */,
+				2BDDD9871FB0C7DE001E2513 /* Managers */,
+				2BDDD9891FB0C7DF001E2513 /* Service */,
 				2BDDD9701FB0C786001E2513 /* LocatorLibrary.h */,
 				2BDDD9711FB0C786001E2513 /* Info.plist */,
 			);
@@ -84,6 +100,40 @@
 				2BDDD97D1FB0C786001E2513 /* Info.plist */,
 			);
 			path = LocatorLibraryTests;
+			sourceTree = "<group>";
+		};
+		2BDDD9871FB0C7DE001E2513 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				2BDDD9881FB0C7DE001E2513 /* LocationManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		2BDDD9891FB0C7DF001E2513 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				2BDDD98A1FB0C7DF001E2513 /* BaseService.swift */,
+				2BDDD98B1FB0C7DF001E2513 /* ServiceIdentifierEnum.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		2BDDD98F1FB0C7EA001E2513 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				2BDDD9901FB0C7EA001E2513 /* ColorExtension.swift */,
+				2BDDD9911FB0C7EA001E2513 /* Utilities.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		2BDDD9921FB0C7EA001E2513 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2BDDD9931FB0C7EA001E2513 /* CustomPlacemarkModel.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,6 +246,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BDDD98E1FB0C7DF001E2513 /* ServiceIdentifierEnum.swift in Sources */,
+				2BDDD9961FB0C7EA001E2513 /* CustomPlacemarkModel.swift in Sources */,
+				2BDDD98D1FB0C7DF001E2513 /* BaseService.swift in Sources */,
+				2BDDD98C1FB0C7DF001E2513 /* LocationManager.swift in Sources */,
+				2BDDD9951FB0C7EA001E2513 /* Utilities.swift in Sources */,
+				2BDDD9941FB0C7EA001E2513 /* ColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,6 +430,7 @@
 		2BDDD9851FB0C786001E2513 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = LocatorLibraryTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -387,6 +444,7 @@
 		2BDDD9861FB0C786001E2513 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = LocatorLibraryTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
